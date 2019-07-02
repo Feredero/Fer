@@ -1,0 +1,48 @@
+{
+	"info": {
+		"_postman_id": "db0d819b-688c-4f47-8535-b229b433c98e",
+		"name": "feredero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "onliner.by",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "onliner.by",
+					"host": [
+						"onliner",
+						"by"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "00c9cf3e-a386-456a-a726-a55ad7b8a223",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4b19e921-3e12-4318-9a93-fc9c5f59cd4b",
+				"type": "text/javascript",
+				"exec": [
+					"pm.test(\"response is ok\", function () {",
+					"    pm.response.to.have.status(200);",
+					"});"
+				]
+			}
+		}
+	]
+}
